@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/star-jedi" rel="stylesheet">
+    <title>Sua Jornada em Star Wars</title>
+    <style>
+        body {
+            font-family: 'Star Jedi', sans-serif;
+            background-color: black;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 01;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Você é um jovem padawan, recém-chegado ao Templo Jedi. A Força flui forte em você, mas o caminho à frente é incerto. Sua primeira missão está prestes a começar e as decisões que você tomar moldarão seu destino.
+            Ao chegar ao primeiro planeta, você descobre que o artefato pode estar escondido em um antigo templo Sith. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="1">Explorar o templo.</button>
+            <button class="btn-proximo" data-proximo="2">Buscar pistas locais.</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você começa sua jornada. Ao adentrar o templo, você se depara com uma série de armadilhas e guardiões Sith..</p>
+            <button class="btn-proximo" data-proximo="3">Tentar burlar as armadilhas.</button>
+            <button class="btn-proximo" data-proximo="4">Enfrentar os guardiões.</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Após conversar com os habitantes, você descobre um antigo mapa que pode levar ao artefato.</p>
+            <button class="btn-proximo" data-proximo="5">Seguir o mapa.</button>
+            <button class="btn-proximo" data-proximo="6">Desconfiar do mapa.</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p> O Jedi se depara com uma série de enigmas e armadilhas baseadas na Força.</p>
+            <button class="btn-proximo" data-proximo="7">Usar a intuição</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
+            <p>Você tenta lutar mais ainda não é pareo para os guardiões, voce volta para o templo Jedi em Coruscantb para buscar ajuda e falar com o seu mestre, mas sempre se pergunta o que teria
+                encontrado.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p> Você usar a força e ver como seria o caminho do mapa, cheio de morte e criaturas ocultas. </p>
+            <button class="btn-proximo" data-proximo="7">Usar a Força para descobrir o caminho certo.</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>O mapa o leva a lugares sombrios cheios de mortes e vozes susurando.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar ao caminho.</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Após confiar na força, a busca pelo artefato se intensifica. Você se depara com duas creteras.</p>
+            <button class="btn-proximo" data-proximo="9">Entrar à esquerda</button>
+            <button class="btn-proximo" data-proximo="10">Entrar à direita</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>De volta ao começo, você confia na força e começar a andar. Agora voce segue o caminho certo.</p>
+            <button class="btn-proximo" data-proximo="7"> Seguir a Força</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="imagem do holocron">
+            <p>Ao passar a cratera, encontra um holocron que revela a história do templo e a razão pela qual o artefato foi escondido ali.</p>
+            <button class="btn-proximo" data-proximo="11">Destruir o holocron.</button>
+            <button class="btn-proximo" data-proximo="13">Tentar entender o lado negro.</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Você descobre uma sala secreta escondida atrás de uma parede ilusória. </p>
+            <button class="btn-proximo" data-proximo="12">Entrar na sala.</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="encontrando o holocron">
+            <p>Ao Temendo a corrupção você decide destruir o holocron. Ele libera uma força maligna que pergunta se vc quer se juntar ao lado negro.</p>
+        <button class="btn-proximo" data-proximo="13">Juntar-se a ele, e receber os poderes do lado negro.</button>
+            <button class="btn-proximo" data-proximo="14">Enfrentá-lo e não deixar ele fugir.</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Retornando e escolhendo a cratera à esquerda, você finalmente encontra a entrada e as inscrições
+                que levam ao artefato.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a entrada.</button>
+        </div>
+        
+        <div class="passo" id="passo-13">
+            <p>Conectado ao holocron, o você sente a presença de uma entidade sombria, antiga como a própria galáxia, que o tentava com promessas de poder ilimitado.</p>
+            <button class="btn-proximo" data-proximo="15">Aceitar o lado negro.</button>
+        </div>
+
+        <div class="passo" id="passo-14">
+            <p>Em meio às sombras de um antigo templo, você balança seu sabre de luz, desafiando o espírito maligno contido na holocron, enquanto faíscas brilhantes dançavam no ar, ecoando o confronto entre a esperança e a escuridão.
+                Após a vitória você cai de joelhos querendo apenas voltar para casa. </p>
+                <button class="btn-proximo" data-proximo="16">Voltar a Coruscant.</button>
+        <div>
+
+
+        <div class="passo" id="passo-15">
+            <p>Você se torna um Lorde Sith que recebe ajuda do outro lado. 
+            No fim você conquista a galáxia. Lord Vader sente muito orgulho de você!</p>
+                    
+
+        
+        
+        <div class="passo" id="passo-16">
+            <img src="img/cenario-passo16-cidade-perdida2.png" alt="encontrando o ">
+            <p>Retornando a Coruscant você é recebido como um herói, meus parabéns! Você salvou a galáxia!
+        <button class="btn-proximo" data-proximo="1">Fim.</button>
+        <div>
+            
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
